@@ -29,9 +29,11 @@ You will also fill in the following helper methods (these will be used in the me
 * `int countOdd()` -- Counts the number of nodes in the (sub)tree that are labeled with an odd number. 
 * `int countEven()` -- Counts the number of nodes in the (sub)tree that are labeled with an even number. 
 
+### Testing
+You will need to compile a test file (`tester.java`) to demonstrate that your tree class works properly. 
 
 ## Grading
-**115 points total**
+**125 points total**
 * `void insert(int)` -- 10 pts
 * `void remove(int)`  -- 10 pts
 * `void removeMinOdd()`  -- 10 pts
@@ -45,3 +47,4 @@ You will also fill in the following helper methods (these will be used in the me
 * `BSTNode findMaxEven()`  -- 10 pts
 * `int countOdd()`  -- 5 pts 
 * `int countEven()` -- 5 pts
+* Tests -- 10 pts
