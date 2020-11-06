@@ -9,11 +9,11 @@ public class BSTNode {
   }
 
   // Inserts a given integer into a given binary search tree.
-  void insert(int){
+  void insert(int inValue){
   }
 
   // Removes a given integer from a tree (assuming it exists).
-  void remove(int){
+  void remove(int inValue){
   }
   
   // Removes the node that is labeled with the minimum odd number contained in the tree. 
