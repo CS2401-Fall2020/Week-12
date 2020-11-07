@@ -8,6 +8,21 @@ public class BSTNode {
     value = inVal;
   }
 
+   
+  public boolean find(int inValue) {
+    if(inValue == value) {
+      return true;
+    }
+    
+    if(left != null && inValue < value) {
+      return left.find(inValue);
+    }else if(right != null && inValue > value){
+      return right.find(inValue);
+    }
+    return false;
+  }
+  
+  
   // Inserts a given integer into a given binary search tree.
   void insert(int inValue){
   }
@@ -75,4 +90,18 @@ public class BSTNode {
     return 0;
   }
   
+  public String toString() {
+    return String.valueOf(value);
+  }
+ 
+  public void print() { print(""); }
+  private void print(String prefix) {
+    System.out.println(prefix + this);
+    prefix = prefix.replace('\u251C', '\u2502');
+    prefix = prefix.replace('\u2514', ' ');
+    if(left != null) left.print(prefix + "\u251C ");
+    else if(right != null) System.out.println(prefix + "\u251C " + "\u2400");
+    if(right != null) right.print(prefix + "\u2514 ");
+    else if(left != null) System.out.println(prefix + "\u2514 " + "\u2400");
+  }
 }
