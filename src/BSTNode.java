@@ -27,34 +27,26 @@ public class BSTNode {
   void insert(int inValue){
   }
 
-  // Removes a given integer from a tree (assuming it exists).
-  void remove(int inValue){
-  }
-  
-  // Removes the node that is labeled with the minimum odd number contained in the tree. 
-  // If no odd numbers are in the tree, do nothing.
-  void removeMinOdd(){
-  }
-  
-  // Removes the node that is labeled with the minimum even number contained in the tree. 
-  // If no even numbers are in the tree, do nothing.
-  void removeMinEven(){
-  }
-  
-  // Removes the node that is labeled with the maximum odd number contained in the tree. 
-  // If no odd numbers are in the tree, do nothing.
-  void removeMaxOdd(){
-  }
-  
-  // Removes the node that is labeled with the maximum even number contained in the tree. 
-  // If no even numbers are in the tree, do nothing.
-  void removeMaxEven(){
-  }
-
   // Searches the tree to find the (pointer to) the node with the minimum value in the subtree.
   BSTNode findMin(){
     return null;
   }
+  
+  // Removes a given integer from a tree (assuming it exists).
+  void remove(int inValue){
+  }
+  
+  // Counts the number of nodes in the (sub)tree that are labeled with an odd number.
+  int countOdd(){
+    return 0;
+  }
+  
+  // Counts the number of nodes in the (sub)tree that are labeled with an even number.
+  int countEven(){
+    return 0;
+  }
+  
+  /**** The methods below will use countEven/countOdd ****/
   
   // Searches the tree to find the (pointer to) the node with the minimum odd value in the subtree. 
   // If no odd numbers are in the tree, return null.
@@ -80,15 +72,29 @@ public class BSTNode {
     return null;
   }
   
-  // Counts the number of nodes in the (sub)tree that are labeled with an odd number.
-  int countOdd(){
-    return 0;
+  
+  /**** The methods below will use find[Min,Max][Odd,Even] and remove ****/
+
+  // Removes the node that is labeled with the minimum odd number contained in the tree. 
+  // If no odd numbers are in the tree, do nothing.
+  void removeMinOdd(){
   }
   
-  // Counts the number of nodes in the (sub)tree that are labeled with an even number.
-  int countEven(){
-    return 0;
+  // Removes the node that is labeled with the minimum even number contained in the tree. 
+  // If no even numbers are in the tree, do nothing.
+  void removeMinEven(){
   }
+  
+  // Removes the node that is labeled with the maximum odd number contained in the tree. 
+  // If no odd numbers are in the tree, do nothing.
+  void removeMaxOdd(){
+  }
+  
+  // Removes the node that is labeled with the maximum even number contained in the tree. 
+  // If no even numbers are in the tree, do nothing.
+  void removeMaxEven(){
+  }
+
   
   public String toString() {
     return String.valueOf(value);
