@@ -32,6 +32,13 @@ You will also fill in the following helper methods (these will be used in the me
 ### Testing
 You will need to compile a test file (`tester.java`) to demonstrate that your tree class works properly. 
 
+**Note:** 
+My reccomended order for completion is in the java files I provided.
+Since the `remove`XY() methods will use the `find`XY() method I would build those first 
+(here X is either `Min` or `Max`, and Y is either `Odd` or `Even`). 
+It may be helpful to construct one of these `find`XY methods, test it, then copy and modify it for the others. 
+Same thing would be helpful when building the `remove` methods. 
+
 ## Grading
 **125 points total**
 * `void insert(int)` -- 10 pts
